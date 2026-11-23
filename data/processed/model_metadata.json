@@ -1,0 +1,24 @@
+{
+  "fecha_ultimo_dato": "2023-08-31",
+  "horizonte_meses": 6,
+  "pesos_ols": {
+    "Equipo1": {
+      "Price_X": 0.1983,
+      "Price_Y": 0.8005,
+      "Price_Z": -0.0001
+    },
+    "Equipo2": {
+      "Price_X": 0.336,
+      "Price_Y": 0.3349,
+      "Price_Z": 0.3326
+    }
+  },
+  "metricas_backtest_mape": {
+    "Error_Eq1_Modelo_Estructural": 8.73,
+    "Error_Eq1_Modelo_Ingenuo": 6.72,
+    "Error_Eq2_Modelo_Estructural": 4.86,
+    "Error_Eq2_Modelo_Ingenuo": 5.31,
+    "Error_Eq1_(conociendo_xyz)": 0.33,
+    "Error_Eq2_(conociendo_xyz)": 0.14
+  }
+}
