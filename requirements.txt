@@ -1,0 +1,12 @@
+pandas
+matplotlib
+streamlit
+python-dotenv
+langchain
+langchain-google-genai
+ddgs
+azure-storage-blob
+statsmodels
+pmdarima
+numpy
+scikit-learn
