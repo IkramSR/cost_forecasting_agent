@@ -1,4 +1,4 @@
-#Sistema de IA para proyección de costos y planeación presupuestal
+# Sistema de IA para proyección de costos y planeación presupuestal
 
 Solución analítica para estimar y proyectar el costo operativo de dos equipos críticos en un proyecto de construcción a partir de series históricas de materias primas (`X`, `Y`, `Z`), expuesta mediante una aplicación interactiva en Streamlit con un agente conversacional y desplegada en Azure.
 
