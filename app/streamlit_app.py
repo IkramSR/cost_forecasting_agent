@@ -3,13 +3,14 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import streamlit as st
 from agente import construir_agente, extraer_texto
+from storage import cargar_forecast_df, cargar_metadata, fuente_datos
 
 st.set_page_config(page_title="Sistema de IA para proyección de costos y planeación presupuestal", layout="wide")
 st.title("Agente conversacional sobre Proyección de Costos")
 st.caption("Herramienta de análisis y estimación de costos de equipos según las variaciones de materias primas necesarias para su manufactura, apoyando la planeación presupuestal en horizontes mensuales")
 
 RUTA_CSV = Path(__file__).resolve().parent.parent / "data" / "processed" / "forecast_resultados.csv"
-df_forecast = pd.read_csv(RUTA_CSV)
+df_forecast = cargar_forecast_df()
 
 # No se recarga el cache en cada mensaje
 @st.cache_resource
@@ -110,3 +111,5 @@ with tab2:
                 st.markdown(texto_final)
 
         st.session_state.mensajes.append({"role": "assistant", "content": texto_final})
+
+st.caption(f"Fuente activa: {fuente_datos()}")
